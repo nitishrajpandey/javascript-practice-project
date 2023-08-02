@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+   <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <nav class="bg-slate-400 border border-black flex justify-center">
+        <div class="m-2 md:m-3 lg:m-5 w-full sm:w-[50%] flex justify-between ">
+            <button class="bg-white font-bold px-5 sm:px-10 md:px-16 lg:px-24 py-2 md:py-3 border border-black rounded-md capitalize hover:bg-slate-200 ">Home</button>
+            <button class="bg-white font-bold px-5 sm:px-10 md:px-16 lg:px-24 py-2 md:py-3 border border-black rounded-md capitalize hover:bg-slate-200">Profile</button>
+        </div>
+    </nav>
+
+    <main class="">
+        <div class="text-center">
+            <h1 class=" text-2xl md:text-3xl lg:text-4xl my-10 capitalize">color scheme switcher</h1>
+        </div>
+        <div class="flex flex-wrap justify-evenly gap-10 md:gap-7 lg:gap-10  sm:w-[80%] lg:w-[60%] m-auto" data-boxes="Box-container">
+            <div class="bg-red-500 rounded-lg w-40 h-40 "></div>
+            <div class="bg-purple-600 rounded-lg w-40 h-40 "></div>
+            <div class="bg-slate-400 rounded-lg w-40 h-40 "></div>
+            <div class="bg-yellow-600 rounded-lg w-40 h-40 "></div>
+            <div class="bg-pink-500 rounded-lg w-40 h-40 "></div>
+            <div class="bg-orange-600 rounded-lg w-40 h-40 "></div>
+            <div class="bg-sky-600 rounded-lg w-40 h-40 "></div>
+            <div class="bg-green-600 rounded-lg w-40 h-40 "></div>
+        </div>
+        <div class="text-center font my-8"><span class="text-3xl font-bold border border-black px-5 py-2 rounded-lg hover:bg-slate-200 capitalize" data-Rbg-value="RBG-value">colur code</span></div>
+        <div class="text-center text-xl">
+            <p>Try clicking on one of the colors above to change the background color of this page!</p>
+        </div>
+    </main>
+</body>
+</html>

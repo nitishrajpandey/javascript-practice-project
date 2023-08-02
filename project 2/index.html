@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+<body class="bg-slate-800">
+    <nav class="bg-slate-700 shadow-xl flex justify-center">
+        <div class="m-2 md:m-3 lg:m-5 w-full sm:w-[50%] flex justify-between ">
+            <button class="bg-white font-bold px-5 sm:px-10 md:px-16 lg:px-24 py-2 md:py-3 border border-black rounded-md capitalize hover:bg-slate-200 ">Home</button>
+            <button class="bg-white font-bold px-5 sm:px-10 md:px-16 lg:px-24 py-2 md:py-3 border border-black rounded-md capitalize hover:bg-slate-200">Profile</button>
+        </div>
+    </nav>
+    <main class=" ">
+        <div class="bg-slate-200 max-w-sm m-auto my-14 p-10 rounded-lg shadow-md">
+            <div class="text-center text-4xl font-bold capitalize mb-5">
+                <h1>BMI Calculator</h1>
+            </div>
+            <form action="" class="flex flex-col" data-form="form">
+                <label class="font-semibold text-xl py-3" for="height" >Height in CM:</label>
+                <input class="py-3 outline-none text-center font-medium rounded-lg" data-height-value="height-value" type="number" name="" id="height">
+                <label class="font-semibold text-xl py-3" for="weight">Weight in KG:</label>
+                <input class="py-3 outline-none text-center font-medium rounded-lg" data-weight-value="weight-value"  type="number" id="weight">
+                <div class=" mt-8 border border-black py-5 px-3 font-semibold text-lg text-center rounded-md " data-result-value="Result-value">Result</div>
+                <div class="mt-5 flex justify-center gap-10">
+                    <div><button class="border border-black px-3 sm:px-5 py-2 rounded-2xl font-semibold hover:bg-green-400 hover:border-none" data-calculate-value="calculate-value">calculate</button></div>
+                    <div><button class="border border-black px-2 sm:px-5 py-2 rounded-2xl font-semibold hover:bg-red-400 hover:border-none" data-reset-value="reset-value">Reset</button></div>
+                </div>
+            </form>
+            <div class="my-7 text-center">
+                <h1 class="font-bold capitalize">BMI Weight Guide</h1>
+            </div>
+            <div class="flex justify-center">
+                <ul class="list-disc">
+                    <li>Under Weight = Less than 18.6</li>
+                    <li>Normal Range = 18.6 and 24.9</li>
+                    <li>Overweight = Greater than 24.9</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
