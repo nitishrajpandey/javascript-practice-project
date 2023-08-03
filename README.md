@@ -1,1 +1,1 @@
-# javascript-projects-practice
+javascript basic practice project
