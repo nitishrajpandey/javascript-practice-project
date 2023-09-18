@@ -7,7 +7,7 @@
     <script src="script.js" defer></script>
     <title>Document</title>
 </head>
-<body class="">
+<body class=" bg-slate-500">
 
     <header>
         <nav class="bg-slate-700 shadow-xl z-50 flex justify-center">
@@ -17,6 +17,44 @@
             </div>
         </nav>
     </header>
+
+
+    <main class="w-[90%] px-5 sm:px-0 sm:w-[70%] lg:w-[50%] m-auto mt-10 pt-5 pb-10 bg-slate-300 rounded-2xl ">
+
+        <div class="mt-10">
+            <h1 class="font-bold text-2xl text-center capitalize">Number guessing game</h1>
+        </div>
+
+        <div class="text-center mt-4">
+            <p class="mb-2">Try and guess a random number between 1 and 100.</p>
+            <p>You have 10 attempts to guess the right number.</p>
+        </div>
+
+        <div>
+            <h1 class="font-bold text-3xl sm:text-4xl capitalize text-center mt-10">Guess a number</h1>
+        </div>
+
+        <div class="flex justify-center mt-8 mb-10">
+            <input class="border-2 sm:border-4 py-3 border-gray-500 outline-none text-center font-semibold text-xl sm:text-2xl" type="number " placeholder="Guess Number" data-inputValue="">
+        </div>
+
+        <div class="text-center">
+            <button class="px-6 py-3 rounded-xl  text-white text-xl font-semibold bg-black capitalize" data-submitButton="">Submit guess</button>
+        </div>
+
+        <div class="text-center mt-10 " data-outputArea="">
+            
+            <p class="mb-2">Previous Guesses: </p>
+            <span class="font-bold flex flex-wrap m-auto w-[50%]" data-previousGuesses="">  </span>
+
+            <p class="mt-4">Guesses Remaining: <span class="font-bold text-lg " data-guessesRemaining="">10</span> </p>
+
+            <p class="" data-result=""></p>
+
+        </div>
+
+
+    </main>
     
 </body>
 </html>
