@@ -41,6 +41,21 @@ submitButton.addEventListener('click', function (e) {
         alert("game over")
         inputValue1.disabled = true;
         submitButton.disabled=true;
+        heading.textContent="Game Over 😞☹️"
+
+        inputValue1.style.display='none';
+        submitButton.style.display='none';
+        reset.style.display='initial'
+        noOfGuess=noOfGuess+1
+        hint.style.display='none';
+        subHeading.style.display='block'
+        subHeading.innerHTML=`your previous guess : ${previous} <br/> you Loss after try ${noOfGuess} attemps`
+
+
+        previousGuesses.style.display='none'
+        previousGuessesText.style.display='none'
+        guessesRemaining.style.display='none'
+        guessesRemainingText.style.display='none'
     }
 
 
@@ -85,10 +100,10 @@ submitButton.addEventListener('click', function (e) {
         guessesRemaining.textContent=noOfGuessLeft
 
         if (inputValue>Numbers) {
-            hint.textContent=" Number is to high"
+            hint.textContent=" Number is to High"
         }
         else if(inputValue<Numbers){
-            hint.textContent="number is to loow"
+            hint.textContent="number is to Low"
         }
         else if(inputValue===Numbers){
             hint.style.display='none';
