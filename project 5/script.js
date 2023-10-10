@@ -37,7 +37,7 @@ async function searchImage() {
     const data = await response.json()
     // console.log("this is data", data);
     const results=data.results;
-    // console.log(results);
+    console.log(results);
     if (page== 1) {
         imageContainer.innerHTML=""
     }
@@ -74,11 +74,11 @@ async function searchImage() {
         views.classList.add('font-bold')
         views.textContent="Views"
         const viewsNumber=document.createElement('span')
-        views.textContent = `Views: ${result.views}`;
+        views.textContent = `Likes: ${result.likes}`;
 
         const download=document.createElement('h3')
         download.classList.add('font-bold')
-        download.textContent="Downloads"
+        download.textContent=`ClickBy : ${result.user.name}`
 
 
         imageWrapper.appendChild(image)
