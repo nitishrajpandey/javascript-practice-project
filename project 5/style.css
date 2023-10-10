@@ -559,10 +559,6 @@ video {
   display: none;
 }
 
-.h-\[300px\] {
-  height: 300px;
-}
-
 .h-fit {
   height: -moz-fit-content;
   height: fit-content;
@@ -739,4 +735,20 @@ video {
 .hover\:bg-\[green\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(0 128 0 / var(--tw-bg-opacity));
+}
+
+@media (min-width: 768px) {
+  .md\:w-\[25\%\] {
+    width: 25%;
+  }
+
+  .md\:w-\[28\%\] {
+    width: 28%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:w-\[30\%\] {
+    width: 30%;
+  }
 }

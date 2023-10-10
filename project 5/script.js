@@ -45,7 +45,7 @@ async function searchImage() {
     results.map((result)=>{
         const boxWrapper=document.createElement('div')
         // console.log("this is before",boxWrapper.classList);
-        boxWrapper.classList.add('h-fit', 'flex', 'flex-col', 'w-[30%]' ,'pb-5', 'bg-[#f0efef]', 'rounded-2xl', 'shadow-xl')
+        boxWrapper.classList.add('h-fit', 'flex', 'flex-col', 'md:w-[28%]', 'lg:w-[30%]' ,'pb-5', 'bg-[#f0efef]', 'rounded-2xl', 'shadow-xl')
         // console.log("this is after",boxWrapper.classList);
 
 
