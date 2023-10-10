@@ -107,6 +107,7 @@ async function searchImage() {
 formArea.addEventListener("submit", function (event) {
     event.preventDefault()
     searchImage()
+    searchArea.value=" "
     page=1
 
 })
