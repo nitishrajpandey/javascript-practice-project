@@ -1,13 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,700;1,600&display=swap"
+        rel="stylesheet">
     <title>Document</title>
 </head>
+
 <body>
-    
+
+    <header>
+        <nav class="bg-gray-300 shadow-xl z-50 flex justify-center">
+            <div class="m-2 md:m-3 lg:m-5 w-full sm:w-[50%] flex justify-between ">
+                <a class="bg-white font-bold px-5 sm:px-10 md:px-16 lg:px-24 py-2 md:py-3 border border-black rounded-md capitalize hover:bg-slate-200 "
+                    href="../index.html">Home</a>
+                <a class="bg-white font-bold px-5 sm:px-10 md:px-16 lg:px-24 py-2 md:py-3 border border-black rounded-md capitalize hover:bg-slate-200"
+                    href="https://github.com/nitishrajpandey">Profile</a>
+            </div>
+        </nav>
+
+        <main class="bg-[url('https://images.unsplash.com/photo-1654277041218-84424c78f0ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1462&q=80')]  bg-top w-[100%] h-[88vh]">
+            <div class="absolute  top-[45%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
+
+
+                <div>
+                    <h1 class="text-white text-5xl capitalize font-semibold mb-20 font-['sans-serif']">Github Acount Finder</h1>
+                </div>
+                <form class="flex gap-3 " action="">
+                    <input
+                        class="hover:scale-105 duration-300 hover:ease-in-out hover:mr-2 py-2 px-5 w-[75%] text-lg outline-none border-none font-semibold  rounded-lg shadow-lg shadow-gray-500"
+                        type="text" placeholder="Enter Github UserID..">
+                    <button
+                        class="px-3 py-3 bg-green-600 text-white font-bold rounded-xl hover:scale-105 duration-600 hover:ease-in-out shadow-md shadow-gray-500"><a href="./card.html">Search</a></button>
+                </form>
+            </div>
+
+        </main>
+    </header>
+
 </body>
+
 </html>
